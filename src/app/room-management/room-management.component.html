@@ -1,0 +1,25 @@
+<div class="container">
+    <h1>Room Management</h1>
+    <form (ngSubmit)="onSubmit()" class="form-inline">
+      <label for="room_id">Room ID:</label>
+      <input id="room_id" type="text" formControlName="room_id" />
+  
+      <label for="room_type">Room Type:</label>
+      <input id="room_type" type="text" formControlName="room_type" />
+  
+      <label for="capacity">Capacity:</label>
+      <input id="capacity" type="number" formControlName="capacity" />
+  
+      <label for="price_per_night">Price per Night:</label>
+      <input id="price_per_night" type="number" formControlName="price_per_night" />
+  
+      <label for="availability">Availability:</label>
+      <input id="availability" type="checkbox" formControlName="availability" />
+  
+      <label for="description">Description:</label>
+      <input id="description" type="text" formControlName="description" />
+  
+      <button type="submit" class="btn btn-primary">Add</button>
+      <button type="button" class="btn btn-secondary" (click)="onCancel()">Cancel</button>
+    </form>
+  </div>
